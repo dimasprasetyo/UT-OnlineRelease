@@ -4,5 +4,9 @@
     "changesite": "Change site",
     "mycourses": "My courses",
     "togglemenu": "Toggle menu",
-    "website": "Website"
+    "website": "Website",
+    "srowebsite": "SRO - UT",
+    "rbvwebsite": "BMP Online",  
+    "o365website": "Office365 UT",
+    "srourl": "http://sro.ut.ac.id"
 }

@@ -1,5 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
 
+
     <ion-side-menu-content>
 
         <ion-nav-bar class="bar-content">
@@ -28,6 +29,12 @@
         <ion-content class="has-side-menu-header mm-sidemenu-menu">
             <nav>
                 <ul class="list dark">
+		    <li>
+                        <a menu-close class="item item-icon-left" ng-href="{{ 'mm.sidemenu.srourl' | translate}}/" mm-link title="{{ 'mm.sidemenu.srowebsite' | translate}}">
+                            <i class="icon ion-earth"></i>{{ 'mm.sidemenu.srowebsite' | translate}}
+                        </a>
+                    </li>
+
                     <li class="mm-mycourses-handler">
                         <a menu-close class="item item-icon-left" ui-sref="site.mm_courses" title="{{ 'mm.sidemenu.mycourses' | translate}}">
                             <i class="icon ion-ionic"></i>{{ 'mm.sidemenu.mycourses' | translate}}
@@ -40,6 +47,16 @@
                         <a menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}">
                             <i class="icon {{icon}}"></i> {{title | translate}}
                             <span ng-show="badge > 0" class="badge badge-positive">{{badge}}</span>
+                        </a>
+                    </li>
+		    <li>
+                        <a menu-close class="item item-icon-left" ng-href="{{siteinfo.siteurl}}/apput/rbvmobile/index.php?id={{siteinfo.username}}" mm-link title="{{ 'mm.sidemenu.rbvwebsite' | translate}}">
+                            <i class="icon ion-document-text"></i>{{ 'mm.sidemenu.rbvwebsite' | translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a menu-close class="item item-icon-left" ng-href="{{siteinfo.siteurl}}/apput/o365/index.php?id={{siteinfo.username}}" mm-link title="{{ 'mm.sidemenu.o365website' | translate}}">
+                            <i class="icon ion-email"></i>{{ 'mm.sidemenu.o365website' | translate}}
                         </a>
                     </li>
                     <li>
